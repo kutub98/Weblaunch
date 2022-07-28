@@ -24,10 +24,10 @@
             <div class="collapse zindex-dropdown:1000 navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav m-auto mb-2 mb-lg-0">
                 <li class="nav-item "><a class="nav-link text-warning fs-5 active" aria-current="page" href="#">Home</a></li>
-                <li class="nav-item mx-3"><a class="nav-link text-warning fs-5" href="Course">Course</a></li>
-                <li class="nav-item mx-3"><a class="nav-link text-warning fs-5" href="#">Explore</a></li>
+                <li class="nav-item mx-3"><a class="nav-link text-warning fs-5" href="#Course">Course</a></li>
+                <li class="nav-item mx-3"><a class="nav-link text-warning fs-5" href="#know">Know more</a></li>
                 <li class="nav-item mx-3"><a class="nav-link text-warning fs-5" href="#">Join</a></li>
-                <li class="nav-item mx-3"><a class="nav-link text-warning fs-5" href="#">Achiment</a></li>
+                <li class="nav-item mx-3"><a class="nav-link text-warning fs-5" href="#">Achivment</a></li>
                 <li class="nav-item mx-3"><a class="nav-link text-warning fs-5" href="#">Companies</a></li>
                 <li class="nav-item mx-3"><a class="nav-link text-warning fs-5" href="#">About Us</a></li>
               
@@ -121,7 +121,7 @@
   <!-- banner part end -->
 
   <!-- course part start -->
-  <section class="container my-2" id="Courses">
+  <section class="container my-2" id="Course">
     <div class="caption  text-center d-flex flex-column justify-content-center lh-sm ">
       <h2 style="margin-top: 50px; " >Discover Our Popular Courses</h2>
       <p class="mt-3 " style="margin-bottom: 100px;">It is a long established fact that a reader will be distracted by 
@@ -242,17 +242,84 @@
           </div>
         </div>
       </div>
+      <!-- cours six end -->
       <div class="row justify-content-center text-center align-items-center">
-        <div class="col-lg-2">
-          <button class="bg-warning fs-6 m-2 btn border-0">See More course</button>
+        <div class="col-lg-3">
+          <button class="bg-warning fs-3 m-2 btn border-0">See More course</button>
         </div>
       </div>
     </div>
   </section>
-      <!-- cours six end -->
-
-
   <!-- course part end -->
+  <!-- QuestionAccordian part start -->
+  <section class="accordian my-5" id="know">
+    <div class="container">
+      <div class="row justify-content-center align-items-center text-center">
+        <div class="col-lg-10 col-col-md-10 col-sm-10 my-5">
+          <h1>Frequently Asked Questions</h1>
+          <p class="fs-4 text-black my-4">t is a long established fact that a reader will be distracted by the readable 
+            content of a page when looking at its layout</p>
+        </div>
+      </div>
+      <div class="row justify-content-center align-items-center text-center">
+        <div class="col-lg-10 col-md-12 col-sm-12">
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item border border-muted p-1 my-1">
+              <h2 class="accordion-header  fs-1" id="headingOne">
+                <button class="accordion-button QuestionFontSize fs-4 text-black" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  What's the difference between <b>flex box</b> and <b>grid box</b>?
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body fs-5 p-0 text-start p-4">
+                 <strong><b> Grid and flexbox.</b></strong> The basic difference between CSS Grid Layout and CSS Flexbox Layout is that flexbox was designed for layout in one dimension - either a row or a column. Grid was designed for two-dimensional layout - rows, and columns at the same time.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item border border-muted p-1 my-1">
+              <h2 class="accordion-header " id="headingTwo">
+                <button class="accordion-button QuestionFontSize fs-4 collapsed  text-black" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  what is the difference between ..<b><span>tailwind</span> </b>.. and..  <b> bootstrap </b> css?
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body fs-5 p-0 text-start p-4">
+                  <b>Tailwind</b> offers predesigned widgets to build a site from scratch with fast UI development. <strong><b>Bootstrap</b></strong> comes with a set of pre-styled responsive, mobile-first components that possess a definite UI kit. <b>Tailwind</b> CSS uses a set of utility classes to create a neat UI with more flexibility and uniqueness
+                </div>
+              </div>
+            </div>
+            
+            <div class="accordion-item border border-muted p-1 my-1">
+              <h2 class="accordion-header " id="headingThree">
+                <button class="accordion-button QuestionFontSize fs-4 collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#collapsThree" aria-expanded="false" aria-controls="collapsThree">
+                  What is the <b>css box</b> model?
+                </button>
+              </h2>
+              <div id="collapsThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body fs-5 p-0 text-start p-4">
+                  The <b>CSS box</b> model is essentially a box that wraps around every HTML element. It consists of: margins, borders, padding, and the actual content
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item border border-muted p-1 my-1">
+              <h2 class="accordion-header " id="headingThree">
+                <button class="accordion-button QuestionFontSize fs-4 collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#collapsFour" aria-expanded="false" aria-controls="collapsFour">
+                  what is <b>semantics tag?</b>
+                </button>
+              </h2>
+              <div id="collapsFour" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body fs-5 p-0 text-start p-4">
+                  The html <b>semantics</b> refers to the tags that provide meaning to an HTML page rather than just presentation. It makes HTML more comprehensible by better defining the different sections and layout of web pages
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> 
+
+    </div>
+  </section>
+  <!-- QuestionAccordian part end -->
 
 
 <script src="bootstraap/popper.min.js"></script>
