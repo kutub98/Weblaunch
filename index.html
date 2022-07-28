@@ -24,13 +24,13 @@
             </button>
             <div class="collapse zindex-dropdown:1000 navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav m-auto mb-2 mb-lg-0">
-                <li class="nav-item "><a class="nav-link text-warning fs-5 active" aria-current="page" href="#">Home</a></li>
-                <li class="nav-item mx-3"><a class="nav-link text-warning fs-5" href="#Course">Course</a></li>
-                <li class="nav-item mx-3"><a class="nav-link text-warning fs-5" href="#know">Know more</a></li>
-                <li class="nav-item mx-3"><a class="nav-link text-warning fs-5" href="#">Join</a></li>
-                <li class="nav-item mx-3"><a class="nav-link text-warning fs-5" href="#">Achivment</a></li>
-                <li class="nav-item mx-3"><a class="nav-link text-warning fs-5" href="#Companies">Companies</a></li>
-                <li class="nav-item mx-3"><a class="nav-link text-warning fs-5" href="#About">About Us</a></li>
+                <li class="nav-item "><a class="nav-link text-black fs-5 active" aria-current="page" href="#">Home</a></li>
+                <li class="nav-item mx-2"><a class="nav-link text-black  fs-5" href="#Course">Course</a></li>
+                <li class="nav-item mx-2"><a class="nav-link  text-black  fs-5" href="#know">Know more</a></li>
+                <li class="nav-item mx-2"><a class="nav-link text-black  fs-5" href="#">Join</a></li>
+                <li class="nav-item mx-2"><a class="nav-link text-black  fs-5" href="#">Achivment</a></li>
+                <li class="nav-item mx-2"><a class="nav-link text-black  fs-5" href="#Companies">Companies</a></li>
+                <li class="nav-item mx-2"><a class="nav-link text-warning fs-5" href="#About">About Us</a></li>
               
               </ul>
             </div>
@@ -47,12 +47,70 @@
                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                      </div>
-                     <div class="modal-body">
-                       ...
-                     </div>
+                     <form class="row g-3 p-4">
+                      <div class="col-md-12">
+                        <label for="validationServer01" class="form-label">First name</label>
+                        <input type="text" class="form-control is-valid" id="validationServer01" value="Mark" required>
+                        <div class="valid-feedback">
+                          Looks good!
+                        </div>
+                      </div>
+                      <div class="col-md-12">
+                        <label for="validationServer02" class="form-label">Last name</label>
+                        <input type="text" class="form-control is-valid" id="validationServer02" value="Otto" required>
+                        <div class="valid-feedback">
+                          Looks good!
+                        </div>
+                      </div>
+                      <div class="col-md-12">
+                        <label for="validationServerUsername" class="form-label">Username</label>
+                        <div class="input-group has-validation">
+                          <span class="input-group-text" id="inputGroupPrepend3">@</span>
+                          <input type="text" class="form-control is-invalid" id="validationServerUsername" aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required>
+                          <div id="validationServerUsernameFeedback" class="invalid-feedback">
+                            Please choose a username.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-12">
+                        <label for="validationServer03" class="form-label">City</label>
+                        <input type="text" class="form-control is-invalid" id="validationServer03" aria-describedby="validationServer03Feedback" required>
+                        <div id="validationServer03Feedback" class="invalid-feedback">
+                          Please provide a valid city.
+                        </div>
+                      </div>
+                      <div class="col-md-12">
+                        <label for="validationServer04" class="form-label">State</label>
+                        <select class="form-select is-invalid" id="validationServer04" aria-describedby="validationServer04Feedback" required>
+                          <option selected disabled value="">Choose...</option>
+                          <option>...</option>
+                        </select>
+                        <div id="validationServer04Feedback" class="invalid-feedback">
+                          Please select a valid state.
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <label for="validationServer05" class="form-label">Zip</label>
+                        <input type="text" class="form-control is-invalid" id="validationServer05" aria-describedby="validationServer05Feedback" required>
+                        <div id="validationServer05Feedback" class="invalid-feedback">
+                          Please provide a valid zip.
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="form-check">
+                          <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3" aria-describedby="invalidCheck3Feedback" required>
+                          <label class="form-check-label" for="invalidCheck3">
+                            Agree to terms and conditions
+                          </label>
+                          <div id="invalidCheck3Feedback" class="invalid-feedback">
+                            You must agree before submitting.
+                          </div>
+                        </div>
+                      </div>
+                    </form>
                      <div class="modal-footer">
                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                       <button type="button" class="btn btn-primary fs-5">Save changes</button>
+                       <button type="submit" class="btn btn-primary fs-5">Submit </button>
                      </div>
                    </div>
                  </div>
@@ -252,6 +310,104 @@
     </div>
   </section>
   <!-- course part end -->
+
+  
+  <section id="join" class="container d-flex bg-primary text-white p-5">
+    <div class="row justify-content-center align-items-center">
+      <div class="col-lg-10 col-md-12 col-sm-12 justify-content-center">
+        <div class="JoinText p-4">
+          <h1>Are you ready to join</h1>
+          <p>It is a long established fact that a reader will be distracted by the 
+            readable content of a page when looking at its layout.</p>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-12 col-sm-12 p-4">
+        <button type="button me-auto"  class="btn fs-5 btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          Registration
+         </button>
+         
+         <!-- Modal -->
+         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+           <div class="modal-dialog">
+             <div class="modal-content">
+               <div class="modal-header">
+                 <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+               </div>
+               <form class="row g-3 p-4">
+                <div class="col-md-12">
+                  <label for="validationServer01" class="form-label">First name</label>
+                  <input type="text" class="form-control is-valid" id="validationServer01" value="Mark" required>
+                  <div class="valid-feedback">
+                    Looks good!
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <label for="validationServer02" class="form-label">Last name</label>
+                  <input type="text" class="form-control is-valid" id="validationServer02" value="Otto" required>
+                  <div class="valid-feedback">
+                    Looks good!
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <label for="validationServerUsername" class="form-label">Username</label>
+                  <div class="input-group has-validation">
+                    <span class="input-group-text" id="inputGroupPrepend3">@</span>
+                    <input type="text" class="form-control is-invalid" id="validationServerUsername" aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required>
+                    <div id="validationServerUsernameFeedback" class="invalid-feedback">
+                      Please choose a username.
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <label for="validationServer03" class="form-label">City</label>
+                  <input type="text" class="form-control is-invalid" id="validationServer03" aria-describedby="validationServer03Feedback" required>
+                  <div id="validationServer03Feedback" class="invalid-feedback">
+                    Please provide a valid city.
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <label for="validationServer04" class="form-label">State</label>
+                  <select class="form-select is-invalid" id="validationServer04" aria-describedby="validationServer04Feedback" required>
+                    <option selected disabled value="">Choose...</option>
+                    <option>...</option>
+                  </select>
+                  <div id="validationServer04Feedback" class="invalid-feedback">
+                    Please select a valid state.
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <label for="validationServer05" class="form-label">Zip</label>
+                  <input type="text" class="form-control is-invalid" id="validationServer05" aria-describedby="validationServer05Feedback" required>
+                  <div id="validationServer05Feedback" class="invalid-feedback">
+                    Please provide a valid zip.
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-check">
+                    <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3" aria-describedby="invalidCheck3Feedback" required>
+                    <label class="form-check-label" for="invalidCheck3">
+                      Agree to terms and conditions
+                    </label>
+                    <div id="invalidCheck3Feedback" class="invalid-feedback">
+                      You must agree before submitting.
+                    </div>
+                  </div>
+                </div>
+              </form>
+               <div class="modal-footer">
+                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                 <button type="submit" class="btn btn-primary fs-5">Submit </button>
+               </div>
+             </div>
+           </div>
+         </div>
+      </div>
+    </div>
+  </section>
+
+
+
   <!-- QuestionAccordian part start -->
   <section class="accordian my-5" id="know">
     <div class="container">
@@ -324,7 +480,7 @@
   <!-- CompanyPartner part start -->
   <section class="container my-5 d-none d-lg-block">
     <div id="Companies">
-      <div class="row justify-content-center text-center align-items-center"
+      <div class="row justify-content-center text-center align-items-center">
         <div class="col-lg-7">
           <h1>Trusted by over 800+ companies</h1>
         </div>
