@@ -1,0 +1,40 @@
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* :root{
+    --btn-background: #f26f17;
+    --text-color: white;
+    --text-orange: #f26f17;
+}
+.btn{
+    background: #f26f17;
+    color: var(--text-color);
+}
+.nav-item{
+
+    color: var(--text-color);
+    margin: 0 8px;
+    padding: 10px;
+    color: var(--text-orange);
+}
+.nav-link{
+    color: var(--text-orange);
+    font-size: 22x;
+    font-weight: bold;
+
+} */
+
+.imgFilter{
+    filter: brightness(50%);
+    -webkit-filter: brightness(50%);
+}
+.bannerText{
+    top: 40%;
+}
+.carousel-indicators .active {
+    opacity: 1;
+    background: orange;
+}

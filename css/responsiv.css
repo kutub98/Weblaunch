@@ -1,0 +1,30 @@
+@media screen and (min-width: 496px) and (max-width: 778px){
+    .tabModal{
+        position: absolute;
+        right: 80px;
+        top: 48px;
+    }
+    .bannerText{
+        top: 40%;
+    }
+}
+
+    @media screen and (max-width: 576px){
+        .tabModal{
+            position: absolute;
+            right: 80px;
+            top: 48px;
+            display: none
+        }
+        .bannerText{
+            top: -8%;
+            width: 80%;
+            left: 34px;
+            line-height: 20px;
+            margin-top: 52px;
+            font-size: 12px !important;
+        }
+        .mt-4 {
+            margin-top: -1.5rem!important;
+        }
+    }
