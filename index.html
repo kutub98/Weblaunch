@@ -1,543 +1,778 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web Launch</title>
-    <link rel="stylesheet" href="bootstraap/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsiv.css">
+    <link rel="stylesheet" href="bootstraap/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsiv.css" />
     <script src="https://kit.fontawesome.com/405873cc17.js" crossorigin="anonymous"></script>
-</head>
-<body>
-  
-  <!-- TopNav start -->
-  <div class="topNav sticky-top">
-    <div class="container ">
-      <div class="row d-flex justify-content-between bg-white align-items-center">
-        <nav class="navbar navbar-expand-lg">
-          <div class="container-fluid MenuReg">
-            <a class="navbar-brand roundded" href="#"><img src="images/img/logo.png" style="height: 110px; width:110px"  alt=""></a>
-            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse zindex-dropdown:1000 navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav m-auto mb-2 mb-lg-0">
-                <li class="nav-item "><a class="nav-link text-black fs-5 active" aria-current="page" href="#">Home</a></li>
-                <li class="nav-item mx-2"><a class="nav-link text-black  fs-5" href="#Course">Course</a></li>
-                <li class="nav-item mx-2"><a class="nav-link  text-black  fs-5" href="#know">Know more</a></li>
-                <li class="nav-item mx-2"><a class="nav-link text-black  fs-5" href="#">Join</a></li>
-                <li class="nav-item mx-2"><a class="nav-link text-black  fs-5" href="#">Achivment</a></li>
-                <li class="nav-item mx-2"><a class="nav-link text-black  fs-5" href="#Companies">Companies</a></li>
-                <li class="nav-item mx-2"><a class="nav-link text-warning fs-5" href="#About">About Us</a></li>
-              
-              </ul>
-            </div>
-            <div class="tabModal">
-              <button type="button me-auto"  class="btn fs-5 btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                Registration
-               </button>
-               
-               <!-- Modal -->
-               <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                 <div class="modal-dialog">
-                   <div class="modal-content">
-                     <div class="modal-header">
-                       <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                     </div>
-                     <form class="row g-3 p-4">
-                      <div class="col-md-12">
-                        <label for="validationServer01" class="form-label">First name</label>
-                        <input type="text" class="form-control is-valid" id="validationServer01" value="Mark" required>
-                        <div class="valid-feedback">
-                          Looks good!
-                        </div>
+  </head>
+  <body>
+    <!-- TopNav start -->
+    <div class="topNav sticky-top">
+      <div class="container">
+        <div class="row d-flex justify-content-between bg-white align-items-center">
+          <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid MenuReg">
+              <a class="navbar-brand roundded" href="#"
+                ><img src="images/img/logo.png" style="height: 110px; width: 110px" alt=""
+              /></a>
+              <button
+                class="navbar-toggler ms-auto"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse zindex-dropdown:1000 navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link text-black fs-5 active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item mx-2"><a class="nav-link text-black fs-5" href="#Course">Course</a></li>
+                  <li class="nav-item mx-2"><a class="nav-link text-black fs-5" href="#know">Know more</a></li>
+                  <li class="nav-item mx-2"><a class="nav-link text-black fs-5" href="#join">Join</a></li>
+                  <li class="nav-item mx-2"><a class="nav-link text-black fs-5" href="#">Achivment</a></li>
+                  <li class="nav-item mx-2"><a class="nav-link text-black fs-5" href="#Companies">Companies</a></li>
+                  <li class="nav-item mx-2"><a class="nav-link text-warning fs-5" href="#About">About Us</a></li>
+                </ul>
+              </div>
+              <div class="tabModal">
+                <button
+                  type="button me-auto"
+                  class="btn fs-5 btn-warning"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  Registration
+                </button>
+
+                <!-- Modal -->
+                <div
+                  class="modal fade"
+                  id="exampleModal"
+                  tabindex="-1"
+                  aria-labelledby="exampleModalLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                       </div>
-                      <div class="col-md-12">
-                        <label for="validationServer02" class="form-label">Last name</label>
-                        <input type="text" class="form-control is-valid" id="validationServer02" value="Otto" required>
-                        <div class="valid-feedback">
-                          Looks good!
+                      <form class="row g-3 p-4">
+                        <div class="col-md-12">
+                          <label for="validationServer01" class="form-label">First name</label>
+                          <input
+                            type="text"
+                            class="form-control is-valid"
+                            id="validationServer01"
+                            value="Mark"
+                            required
+                          />
+                          <div class="valid-feedback">Looks good!</div>
                         </div>
-                      </div>
-                      <div class="col-md-12">
-                        <label for="validationServerUsername" class="form-label">Username</label>
-                        <div class="input-group has-validation">
-                          <span class="input-group-text" id="inputGroupPrepend3">@</span>
-                          <input type="text" class="form-control is-invalid" id="validationServerUsername" aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required>
-                          <div id="validationServerUsernameFeedback" class="invalid-feedback">
-                            Please choose a username.
+                        <div class="col-md-12">
+                          <label for="validationServer02" class="form-label">Last name</label>
+                          <input
+                            type="text"
+                            class="form-control is-valid"
+                            id="validationServer02"
+                            value="Otto"
+                            required
+                          />
+                          <div class="valid-feedback">Looks good!</div>
+                        </div>
+                        <div class="col-md-12">
+                          <label for="validationServerUsername" class="form-label">Username</label>
+                          <div class="input-group has-validation">
+                            <span class="input-group-text" id="inputGroupPrepend3">@</span>
+                            <input
+                              type="text"
+                              class="form-control is-invalid"
+                              id="validationServerUsername"
+                              aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback"
+                              required
+                            />
+                            <div id="validationServerUsernameFeedback" class="invalid-feedback">
+                              Please choose a username.
+                            </div>
                           </div>
                         </div>
-                      </div>
-                      <div class="col-md-12">
-                        <label for="validationServer03" class="form-label">City</label>
-                        <input type="text" class="form-control is-invalid" id="validationServer03" aria-describedby="validationServer03Feedback" required>
-                        <div id="validationServer03Feedback" class="invalid-feedback">
-                          Please provide a valid city.
-                        </div>
-                      </div>
-                      <div class="col-md-12">
-                        <label for="validationServer04" class="form-label">State</label>
-                        <select class="form-select is-invalid" id="validationServer04" aria-describedby="validationServer04Feedback" required>
-                          <option selected disabled value="">Choose...</option>
-                          <option>...</option>
-                        </select>
-                        <div id="validationServer04Feedback" class="invalid-feedback">
-                          Please select a valid state.
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <label for="validationServer05" class="form-label">Zip</label>
-                        <input type="text" class="form-control is-invalid" id="validationServer05" aria-describedby="validationServer05Feedback" required>
-                        <div id="validationServer05Feedback" class="invalid-feedback">
-                          Please provide a valid zip.
-                        </div>
-                      </div>
-                      <div class="col-12">
-                        <div class="form-check">
-                          <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3" aria-describedby="invalidCheck3Feedback" required>
-                          <label class="form-check-label" for="invalidCheck3">
-                            Agree to terms and conditions
-                          </label>
-                          <div id="invalidCheck3Feedback" class="invalid-feedback">
-                            You must agree before submitting.
+                        <div class="col-md-12">
+                          <label for="validationServer03" class="form-label">City</label>
+                          <input
+                            type="text"
+                            class="form-control is-invalid"
+                            id="validationServer03"
+                            aria-describedby="validationServer03Feedback"
+                            required
+                          />
+                          <div id="validationServer03Feedback" class="invalid-feedback">
+                            Please provide a valid city.
                           </div>
                         </div>
+                        <div class="col-md-12">
+                          <label for="validationServer04" class="form-label">State</label>
+                          <select
+                            class="form-select is-invalid"
+                            id="validationServer04"
+                            aria-describedby="validationServer04Feedback"
+                            required
+                          >
+                            <option selected disabled value="">Choose...</option>
+                            <option>...</option>
+                          </select>
+                          <div id="validationServer04Feedback" class="invalid-feedback">
+                            Please select a valid state.
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <label for="validationServer05" class="form-label">Zip</label>
+                          <input
+                            type="text"
+                            class="form-control is-invalid"
+                            id="validationServer05"
+                            aria-describedby="validationServer05Feedback"
+                            required
+                          />
+                          <div id="validationServer05Feedback" class="invalid-feedback">
+                            Please provide a valid zip.
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <div class="form-check">
+                            <input
+                              class="form-check-input is-invalid"
+                              type="checkbox"
+                              value=""
+                              id="invalidCheck3"
+                              aria-describedby="invalidCheck3Feedback"
+                              required
+                            />
+                            <label class="form-check-label" for="invalidCheck3"> Agree to terms and conditions </label>
+                            <div id="invalidCheck3Feedback" class="invalid-feedback">
+                              You must agree before submitting.
+                            </div>
+                          </div>
+                        </div>
+                      </form>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary fs-5">Submit</button>
                       </div>
-                    </form>
-                     <div class="modal-footer">
-                       <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                       <button type="submit" class="btn btn-primary fs-5">Submit </button>
-                     </div>
-                   </div>
-                 </div>
-               </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-           
+            <!-- Button trigger modal -->
+          </nav>
+        </div>
+      </div>
+    </div>
+    <!-- TopNav end -->
+    <!-- banner part start -->
+    <section class="">
+      <div class="container">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+          <div class="carousel-indicators d-none d-lg-block d-md-block">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
           </div>
-          <!-- Button trigger modal -->
-          
-        </nav>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images/cover/cover-1.png" class="d-block imgFilter img-fluid" alt="..." />
+              <div class="carousel-caption d-md-block bannerText">
+                <h2 class="">Get Started Digital Learning</h2>
+                <p class="text-align-justify">
+                  It is a long established fact that a reader will be distracted by the readable content of a page when
+                  looking at its layout
+                </p>
+                <button class="btn btn-primary mt-4">Get Started</button>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="images/cover/cover-3.jpg" class="d-block imgFilter img-fluid" alt="..." />
+              <div class="carousel-caption d-md-block bannerText">
+                <h2 class="">Get Started Digital Learning</h2>
+                <p class="text-align-justify">
+                  It is a long established fact that a reader will be distracted by the readable content of a page when
+                  looking at its layout
+                </p>
+                <button class="btn btn-primary mt-4">Get Started</button>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="images/cover/cover-1.png" class="d-block imgFilter img-fluid" alt="..." />
+              <div class="carousel-caption d-md-block bannerText">
+                <h2 class="">Get Started Digital Learning</h2>
+                <p class="text-align-justify">
+                  It is a long established fact that a reader will be distracted by the readable content of a page when
+                  looking at its layout
+                </p>
+                <button class="btn btn-primary mt-4">Get Started</button>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- banner part end -->
+
+    <!-- course part start -->
+    <section class="container my-2" id="Course">
+      <div class="caption text-center d-flex flex-column justify-content-center lh-sm">
+        <h2 style="margin-top: 50px">Discover Our Popular Courses</h2>
+        <p class="mt-3" style="margin-bottom: 100px">
+          It is a long established fact that a reader will be distracted by the readable <br />content of a page when
+          looking at its layout.
+        </p>
+      </div>
+
+      <div class="row">
+        <!-- cours one start -->
+        <div class="col-lg-6 col-md-12 col-sm-12">
+          <div class="card mb-3">
+            <div class="row g-0 align-items-center">
+              <div class="col-md-4 co-lg-4 col-sm-12" style="height: 200px">
+                <img src="images/course/my-course1.jpg" class="rounded-start w-100 h-100" alt="..." />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h4 class="card-title">Web Design</h4>
+                  <p class="card-text">
+                    Learning Web Designing from web lunch will make you a job ready wen designer. You will be learning
+                    from the people who are actually.
+                  </p>
+                  <h5 class="text-info">Price: 20$</h5>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- cours one end -->
+        <!-- cours two start -->
+        <div class="col-lg-6 col-md-12 col-sm-12">
+          <div class="card mb-3">
+            <div class="row g-0 align-items-center">
+              <div class="col-md-4 co-lg-4 col-sm-12" style="height: 200px">
+                <img src="images/course/my-course2.jpg" class="rounded-start w-100 h-100" alt="..." />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h4 class="card-title">Fullstack Web Development</h4>
+                  <p class="card-text">
+                    Learning Photography from Launch will make you a job ready wen developer. You will be learning from
+                    the people who are actually.
+                  </p>
+                  <h5 class="text-info">Price: 20$</h5>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- cours two end -->
+        <!-- cours three start -->
+        <div class="col-lg-6 col-md-12 col-sm-12">
+          <div class="card mb-3">
+            <div class="row g-0 align-items-center">
+              <div class="col-md-4 co-lg-4 col-sm-12" style="height: 200px">
+                <img src="images/course/my-course3.jpg" class="rounded-start w-100 h-100" alt="..." />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h4 class="card-title">Photography Basic Rules</h4>
+                  <p class="card-text">
+                    Learning Photography from Launch will make you a job ready wen designer. You will be learning from
+                    the people who are actually.
+                  </p>
+                  <h5 class="text-info">Price: 20$</h5>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- cours three end -->
+        <!-- cours four start -->
+        <div class="col-lg-6 col-md-12 col-sm-12">
+          <div class="card mb-3">
+            <div class="row g-0 align-items-center">
+              <div class="col-md-4 co-lg-4 col-sm-12" style="height: 200px">
+                <img src="images/course/my-course4.jpg" class="rounded-start w-100 h-100" alt="..." />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h4 class="card-title">Javascript Basic to advanced</h4>
+                  <p class="card-text">
+                    Learning Javascript from Launch will make you a job ready wen developer. You will be learning from
+                    the people who are actually.
+                  </p>
+                  <h5 class="text-info">Price: 20$</h5>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- cours four end -->
+        <!-- cours five start -->
+        <div class="col-lg-6 col-md-12 col-sm-12">
+          <div class="card mb-3">
+            <div class="row g-0 align-items-center">
+              <div class="col-md-4 co-lg-4 col-sm-12" style="height: 200px">
+                <img src="images/course/my-course5.jpg" class="rounded-start w-100 h-100" alt="..." />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h4 class="card-title">Digital Market</h4>
+                  <p class="card-text">
+                    Learning Digital Market from Launch will make you a job ready wen developer. You will be learning
+                    from the people who are actually.
+                  </p>
+                  <h5 class="text-info">Price: 20$</h5>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- cours five end -->
+        <!-- cours six start -->
+        <div class="col-lg-6 col-md-12 col-sm-12">
+          <div class="card mb-3">
+            <div class="row g-0 align-items-center">
+              <div class="col-md-4 co-lg-4 col-sm-12" style="height: 200px">
+                <img src="images/course/my-course6.jpg" class="rounded-start w-100 h-100" alt="..." />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h4 class="card-title">Motion Graphics</h4>
+                  <p class="card-text">
+                    Learning Digital Market from Launch will make you a job ready wen developer. You will be learning
+                    from the people who are actually.
+                  </p>
+                  <h5 class="text-info">Price: 20$</h5>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- cours six end -->
+        <div class="row justify-content-center text-center align-items-center">
+          <div class="col-lg-3">
+            <button class="bg-warning fs-3 m-2 btn border-0">See More course</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- course part end -->
+   
+ <!-- ready for join part start -->
+    <section id="join" class="container d-flex bg-primary text-white p-5 my-5">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-lg-10 col-md-12 col-sm-12 justify-content-center">
+          <div class="JoinText p-4">
+            <h1>Are you ready to join</h1>
+            <p>
+              It is a long established fact that a reader will be distracted by the readable content of a page when
+              looking at its layout.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-12 col-sm-12 p-4">
+          <button
+            type="button me-auto"
+            class="btn fs-5 btn-warning"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+          >
+            Registration
+          </button>
+
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="exampleModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <form class="row g-3 p-4">
+                  <div class="col-md-12">
+                    <label for="validationServer01" class="form-label">First name</label>
+                    <input type="text" class="form-control is-valid" id="validationServer01" value="Mark" required />
+                    <div class="valid-feedback">Looks good!</div>
+                  </div>
+                  <div class="col-md-12">
+                    <label for="validationServer02" class="form-label">Last name</label>
+                    <input type="text" class="form-control is-valid" id="validationServer02" value="Otto" required />
+                    <div class="valid-feedback">Looks good!</div>
+                  </div>
+                  <div class="col-md-12">
+                    <label for="validationServerUsername" class="form-label">Username</label>
+                    <div class="input-group has-validation">
+                      <span class="input-group-text" id="inputGroupPrepend3">@</span>
+                      <input
+                        type="text"
+                        class="form-control is-invalid"
+                        id="validationServerUsername"
+                        aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback"
+                        required
+                      />
+                      <div id="validationServerUsernameFeedback" class="invalid-feedback">
+                        Please choose a username.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <label for="validationServer03" class="form-label">City</label>
+                    <input
+                      type="text"
+                      class="form-control is-invalid"
+                      id="validationServer03"
+                      aria-describedby="validationServer03Feedback"
+                      required
+                    />
+                    <div id="validationServer03Feedback" class="invalid-feedback">Please provide a valid city.</div>
+                  </div>
+                  <div class="col-md-12">
+                    <label for="validationServer04" class="form-label">State</label>
+                    <select
+                      class="form-select is-invalid"
+                      id="validationServer04"
+                      aria-describedby="validationServer04Feedback"
+                      required
+                    >
+                      <option selected disabled value="">Choose...</option>
+                      <option>...</option>
+                    </select>
+                    <div id="validationServer04Feedback" class="invalid-feedback">Please select a valid state.</div>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="validationServer05" class="form-label">Zip</label>
+                    <input
+                      type="text"
+                      class="form-control is-invalid"
+                      id="validationServer05"
+                      aria-describedby="validationServer05Feedback"
+                      required
+                    />
+                    <div id="validationServer05Feedback" class="invalid-feedback">Please provide a valid zip.</div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input is-invalid"
+                        type="checkbox"
+                        value=""
+                        id="invalidCheck3"
+                        aria-describedby="invalidCheck3Feedback"
+                        required
+                      />
+                      <label class="form-check-label" for="invalidCheck3"> Agree to terms and conditions </label>
+                      <div id="invalidCheck3Feedback" class="invalid-feedback">You must agree before submitting.</div>
+                    </div>
+                  </div>
+                </form>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="submit" class="btn btn-primary fs-5">Submit</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+ <!-- ready for join part end -->
+<!--   exlore part end -->
+<section class="container">
+  <div class="row justify-content-center align-items-center">
+    <div class="col-lg-5 .col-col-md-7 col-12 col-sm-12">
+      <div class="exploreImg" style="height: 600px;">
+        <img src="images/working.png" class="img-fluid w-100 h-100" alt="">
+      </div>
+    </div>
+    <div class="col-lg-7 .col-col-md-7 col-12 col-sm-12">
+      <div class="exploreText p-5 bg-warning">
+       <h1 class="fs-1 fw-bolder text-black">Explore The elearning Institute</h1>
+       <p class="fs-4 text-black">There are many variations of passages 
+        of Lorem Ipsum available, but the 
+        majority have suffered alteration in 
+        some form, by injected humour, or 
+        randomised words which....</p>
+        <div class="d-flex g-5 justify-content-between">
+          <div>
+            <h1 class="fs-2 fw-bolder">3.4k</h1>
+            <h3>Online Course</h3>
+          </div>
+          <div>
+            <h1 class="fs-2 fw-bolder">600+</h1>
+            <h3>Expert member</h3>
+          </div>
+        </div>
+        <div>
+          <div class="my-3">
+            <h1 class="fs-2 fw-bolder">1k+</h1>
+            <h3>Rating & Review</h3>
+          </div>
+          <buttion class="btn fs-3 fw-bold px-3 my-1 rounded bg-black text-white">Read More</buttion>
+        </div>
       </div>
     </div>
   </div>
-  <!-- TopNav end -->
-  <!-- banner part start -->
-  <section class="">
-    <div class="container">
-      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
-        <div class="carousel-indicators d-none d-lg-block d-md-block">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="images/cover/cover-1.png" class="d-block imgFilter img-fluid" alt="...">
-            <div class="carousel-caption d-md-block bannerText ">
-              <h2 class="">Get Started Digital Learning</h2>
-              <p class=" text-align-justify">It is a long established fact that a reader will 
-                be distracted by the readable content of a 
-                page when looking at its layout</p>
-                <button class="btn btn-primary mt-4">Get Started</button>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="images/cover/cover-3.jpg" class="d-block imgFilter img-fluid " alt="...">
-            <div class="carousel-caption d-md-block bannerText ">
-                <h2 class="">Get Started Digital Learning</h2>
-              <p class=" text-align-justify">It is a long established fact that a reader will 
-                be distracted by the readable content of a 
-                page when looking at its layout</p>
-                <button class="btn btn-primary mt-4">Get Started</button>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="images/cover/cover-1.png" class="d-block imgFilter img-fluid" alt="...">
-            <div class="carousel-caption d-md-block bannerText ">
-                <h2 class="">Get Started Digital Learning</h2>
-              <p class=" text-align-justify">It is a long established fact that a reader will 
-                be distracted by the readable content of a 
-                page when looking at its layout</p>
-                <button class="btn btn-primary mt-4">Get Started</button>
-            </div>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-    </div>
-  </section>
-  <!-- banner part end -->
+</section>
+ 
+  <!--  exlore part end -->
 
-  <!-- course part start -->
-  <section class="container my-2" id="Course">
-    <div class="caption  text-center d-flex flex-column justify-content-center lh-sm ">
-      <h2 style="margin-top: 50px; " >Discover Our Popular Courses</h2>
-      <p class="mt-3 " style="margin-bottom: 100px;">It is a long established fact that a reader will be distracted by 
-        the readable <br>content  of a page when looking at its layout.</p>
-    </div>
-
-    <div class="row">
-      <!-- cours one start -->
-      <div class="col-lg-6 col-md-12 col-sm-12">
-        <div class="card mb-3" >
-          <div class="row g-0 align-items-center">
-            <div class="col-md-4 co-lg-4 col-sm-12" style="height: 200px;">
-              <img src="images/course/my-course1.jpg" class=" rounded-start w-100 h-100" alt="...">
-            </div>
-            <div class="col-md-8">
-              <div class="card-body">
-                <h4 class="card-title">Web Design</h4>
-                <p class="card-text">Learning Web Designing from web lunch will make you a job ready wen designer. You will be learning from the people who are actually. </p>
-                <h5 class="text-info">Price: 20$</h5>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-              </div>
-            </div>
+    <!-- QuestionAccordian part start -->
+    <section class="accordian my-5" id="know">
+      <div class="container">
+        <div class="row justify-content-center align-items-center text-center">
+          <div class="col-lg-10 col-col-md-10 col-sm-10 my-5">
+            <h3>Frequently Asked Questions</h3>
+            <p class="fs-4 text-black my-4">
+              t is a long established fact that a reader will be distracted by the readable content of a page when
+              looking at its layout
+            </p>
           </div>
         </div>
-      </div>
-      <!-- cours one end -->
-      <!-- cours two start -->
-      <div class="col-lg-6 col-md-12 col-sm-12">
-        <div class="card mb-3" >
-          <div class="row g-0 align-items-center">
-            <div class="col-md-4 co-lg-4 col-sm-12" style="height: 200px;">
-              <img src="images/course/my-course2.jpg" class=" rounded-start w-100 h-100" alt="...">
-            </div>
-            <div class="col-md-8">
-              <div class="card-body">
-                <h4 class="card-title">Fullstack Web Development</h4>
-                <p class="card-text">Learning Photography from Launch will make you a job ready wen developer. You will be learning from the people who are actually.</p>
-                <h5 class="text-info">Price: 20$</h5>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- cours two end -->
-      <!-- cours three start -->
-      <div class="col-lg-6 col-md-12 col-sm-12">
-        <div class="card mb-3" >
-          <div class="row g-0 align-items-center">
-            <div class="col-md-4 co-lg-4 col-sm-12" style="height: 200px;">
-              <img src="images/course/my-course3.jpg" class=" rounded-start w-100 h-100" alt="...">
-            </div>
-            <div class="col-md-8">
-              <div class="card-body">
-                <h4 class="card-title">Photography Basic Rules</h4>
-                <p class="card-text">Learning Photography from Launch will make you a job ready wen designer. You will be learning from the people who are actually. </p>
-                <h5 class="text-info">Price: 20$</h5>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- cours three end -->
-      <!-- cours four start -->
-      <div class="col-lg-6 col-md-12 col-sm-12">
-        <div class="card mb-3" >
-          <div class="row g-0 align-items-center">
-            <div class="col-md-4 co-lg-4 col-sm-12" style="height: 200px;">
-              <img src="images/course/my-course4.jpg" class=" rounded-start w-100 h-100" alt="...">
-            </div>
-            <div class="col-md-8">
-              <div class="card-body">
-                <h4 class="card-title">Javascript Basic to advanced</h4>
-                <p class="card-text">Learning Javascript from Launch will make you a job ready wen developer. You will be learning from the people who are actually. </p>
-                <h5 class="text-info">Price: 20$</h5>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- cours four end -->
-      <!-- cours five start -->
-      <div class="col-lg-6 col-md-12 col-sm-12">
-        <div class="card mb-3" >
-          <div class="row g-0 align-items-center">
-            <div class="col-md-4 co-lg-4 col-sm-12" style="height: 200px;">
-              <img src="images/course/my-course5.jpg" class=" rounded-start w-100 h-100" alt="...">
-            </div>
-            <div class="col-md-8">
-              <div class="card-body">
-                <h4 class="card-title">Digital Market</h4>
-                <p class="card-text">Learning Digital Market from Launch will make you a job ready wen developer. You will be learning from the people who are actually. </p>
-                <h5 class="text-info">Price: 20$</h5>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- cours five end -->
-      <!-- cours six start -->
-      <div class="col-lg-6 col-md-12 col-sm-12">
-        <div class="card mb-3" >
-          <div class="row g-0 align-items-center">
-            <div class="col-md-4 co-lg-4 col-sm-12" style="height: 200px;">
-              <img src="images/course/my-course6.jpg" class=" rounded-start w-100 h-100" alt="...">
-            </div>
-            <div class="col-md-8">
-              <div class="card-body">
-                <h4 class="card-title">Motion Graphics</h4>
-                <p class="card-text">Learning Digital Market from Launch will make you a job ready wen developer. You will be learning from the people who are actually. </p>
-                <h5 class="text-info">Price: 20$</h5>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- cours six end -->
-      <div class="row justify-content-center text-center align-items-center">
-        <div class="col-lg-3">
-          <button class="bg-warning fs-3 m-2 btn border-0">See More course</button>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- course part end -->
-
-  
-  <section id="join" class="container d-flex bg-primary text-white p-5 my-5">
-    <div class="row justify-content-center align-items-center">
-      <div class="col-lg-10 col-md-12 col-sm-12 justify-content-center">
-        <div class="JoinText p-4">
-          <h1>Are you ready to join</h1>
-          <p>It is a long established fact that a reader will be distracted by the 
-            readable content of a page when looking at its layout.</p>
-        </div>
-      </div>
-      <div class="col-lg-2 col-md-12 col-sm-12 p-4">
-        <button type="button me-auto"  class="btn fs-5 btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">
-          Registration
-         </button>
-         
-         <!-- Modal -->
-         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-           <div class="modal-dialog">
-             <div class="modal-content">
-               <div class="modal-header">
-                 <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-               </div>
-               <form class="row g-3 p-4">
-                <div class="col-md-12">
-                  <label for="validationServer01" class="form-label">First name</label>
-                  <input type="text" class="form-control is-valid" id="validationServer01" value="Mark" required>
-                  <div class="valid-feedback">
-                    Looks good!
+        <div class="row justify-content-center align-items-center text-center">
+          <div class="col-lg-10 col-md-12 col-sm-12">
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item border border-muted p-1 my-1">
+                <h2 class="accordion-header" id="headingOne">
+                  <button
+                    class="accordion-button QuestionFontSize text-black"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                  >
+                    What's the difference between <b>flex box</b> and <b>grid box</b>?
+                  </button>
+                </h2>
+                <div
+                  id="collapseOne"
+                  class="accordion-collapse collapse show"
+                  aria-labelledby="headingOne"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body fs-5 p-0 text-start p-4">
+                    <strong><b> Grid and flexbox.</b></strong> The basic difference between CSS Grid Layout and CSS
+                    Flexbox Layout is that flexbox was designed for layout in one dimension - either a row or a column.
+                    Grid was designed for two-dimensional layout - rows, and columns at the same time.
                   </div>
                 </div>
-                <div class="col-md-12">
-                  <label for="validationServer02" class="form-label">Last name</label>
-                  <input type="text" class="form-control is-valid" id="validationServer02" value="Otto" required>
-                  <div class="valid-feedback">
-                    Looks good!
+              </div>
+              <div class="accordion-item border border-muted p-1 my-1">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button
+                    class="accordion-button QuestionFontSize collapsed text-black"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                    what is the difference between ..<b><span>tailwind</span> </b>.. and.. <b> bootstrap </b> css?
+                  </button>
+                </h2>
+                <div
+                  id="collapseTwo"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingTwo"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body fs-5 p-0 text-start p-4">
+                    <b>Tailwind</b> offers predesigned widgets to build a site from scratch with fast UI development.
+                    <strong><b>Bootstrap</b></strong> comes with a set of pre-styled responsive, mobile-first components
+                    that possess a definite UI kit. <b>Tailwind</b> CSS uses a set of utility classes to create a neat
+                    UI with more flexibility and uniqueness
                   </div>
-                </div>
-                <div class="col-md-12">
-                  <label for="validationServerUsername" class="form-label">Username</label>
-                  <div class="input-group has-validation">
-                    <span class="input-group-text" id="inputGroupPrepend3">@</span>
-                    <input type="text" class="form-control is-invalid" id="validationServerUsername" aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required>
-                    <div id="validationServerUsernameFeedback" class="invalid-feedback">
-                      Please choose a username.
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-12">
-                  <label for="validationServer03" class="form-label">City</label>
-                  <input type="text" class="form-control is-invalid" id="validationServer03" aria-describedby="validationServer03Feedback" required>
-                  <div id="validationServer03Feedback" class="invalid-feedback">
-                    Please provide a valid city.
-                  </div>
-                </div>
-                <div class="col-md-12">
-                  <label for="validationServer04" class="form-label">State</label>
-                  <select class="form-select is-invalid" id="validationServer04" aria-describedby="validationServer04Feedback" required>
-                    <option selected disabled value="">Choose...</option>
-                    <option>...</option>
-                  </select>
-                  <div id="validationServer04Feedback" class="invalid-feedback">
-                    Please select a valid state.
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <label for="validationServer05" class="form-label">Zip</label>
-                  <input type="text" class="form-control is-invalid" id="validationServer05" aria-describedby="validationServer05Feedback" required>
-                  <div id="validationServer05Feedback" class="invalid-feedback">
-                    Please provide a valid zip.
-                  </div>
-                </div>
-                <div class="col-12">
-                  <div class="form-check">
-                    <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3" aria-describedby="invalidCheck3Feedback" required>
-                    <label class="form-check-label" for="invalidCheck3">
-                      Agree to terms and conditions
-                    </label>
-                    <div id="invalidCheck3Feedback" class="invalid-feedback">
-                      You must agree before submitting.
-                    </div>
-                  </div>
-                </div>
-              </form>
-               <div class="modal-footer">
-                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                 <button type="submit" class="btn btn-primary fs-5">Submit </button>
-               </div>
-             </div>
-           </div>
-         </div>
-      </div>
-    </div>
-  </section>
-
-
-
-  <!-- QuestionAccordian part start -->
-  <section class="accordian my-5" id="know">
-    <div class="container">
-      <div class="row justify-content-center align-items-center text-center">
-        <div class="col-lg-10 col-col-md-10 col-sm-10 my-5">
-          <h3>Frequently Asked Questions</h3>
-          <p class="fs-4 text-black my-4">t is a long established fact that a reader will be distracted by the readable 
-            content of a page when looking at its layout</p>
-        </div>
-      </div>
-      <div class="row justify-content-center align-items-center text-center">
-        <div class="col-lg-10 col-md-12 col-sm-12">
-          <div class="accordion" id="accordionExample">
-            <div class="accordion-item border border-muted p-1 my-1">
-              <h2 class="accordion-header" id="headingOne">
-                <button class="accordion-button QuestionFontSize text-black" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                  What's the difference between <b>flex box</b> and <b>grid box</b>?
-                </button>
-              </h2>
-              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                <div class="accordion-body fs-5 p-0 text-start p-4">
-                 <strong><b> Grid and flexbox.</b></strong> The basic difference between CSS Grid Layout and CSS Flexbox Layout is that flexbox was designed for layout in one dimension - either a row or a column. Grid was designed for two-dimensional layout - rows, and columns at the same time.
                 </div>
               </div>
-            </div>
-            <div class="accordion-item border border-muted p-1 my-1">
-              <h2 class="accordion-header " id="headingTwo">
-                <button class="accordion-button QuestionFontSize collapsed  text-black" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                  what is the difference between ..<b><span>tailwind</span> </b>.. and..  <b> bootstrap </b> css?
-                </button>
-              </h2>
-              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                <div class="accordion-body fs-5 p-0 text-start p-4">
-                  <b>Tailwind</b> offers predesigned widgets to build a site from scratch with fast UI development. <strong><b>Bootstrap</b></strong> comes with a set of pre-styled responsive, mobile-first components that possess a definite UI kit. <b>Tailwind</b> CSS uses a set of utility classes to create a neat UI with more flexibility and uniqueness
+
+              <div class="accordion-item border border-muted p-1 my-1">
+                <h2 class="accordion-header" id="headingThree">
+                  <button
+                    class="accordion-button QuestionFontSize collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapsThree"
+                    aria-expanded="false"
+                    aria-controls="collapsThree"
+                  >
+                    What is the <b>css box</b> model?
+                  </button>
+                </h2>
+                <div
+                  id="collapsThree"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingThree"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body fs-5 p-0 text-start p-4">
+                    The <b>CSS box</b> model is essentially a box that wraps around every HTML element. It consists of:
+                    margins, borders, padding, and the actual content
+                  </div>
                 </div>
               </div>
-            </div>
-            
-            <div class="accordion-item border border-muted p-1 my-1">
-              <h2 class="accordion-header " id="headingThree">
-                <button class="accordion-button QuestionFontSize collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#collapsThree" aria-expanded="false" aria-controls="collapsThree">
-                  What is the <b>css box</b> model?
-                </button>
-              </h2>
-              <div id="collapsThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                <div class="accordion-body fs-5 p-0 text-start p-4">
-                  The <b>CSS box</b> model is essentially a box that wraps around every HTML element. It consists of: margins, borders, padding, and the actual content
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item border border-muted p-1 my-1">
-              <h2 class="accordion-header " id="headingThree">
-                <button class="accordion-button QuestionFontSize collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#collapsFour" aria-expanded="false" aria-controls="collapsFour">
-                  what is <b>semantics tag?</b>
-                </button>
-              </h2>
-              <div id="collapsFour" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                <div class="accordion-body fs-5 p-0 text-start p-4">
-                  The html <b>semantics</b> refers to the tags that provide meaning to an HTML page rather than just presentation. It makes HTML more comprehensible by better defining the different sections and layout of web pages
+              <div class="accordion-item border border-muted p-1 my-1">
+                <h2 class="accordion-header" id="headingThree">
+                  <button
+                    class="accordion-button QuestionFontSize collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapsFour"
+                    aria-expanded="false"
+                    aria-controls="collapsFour"
+                  >
+                    what is <b>semantics tag?</b>
+                  </button>
+                </h2>
+                <div
+                  id="collapsFour"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingThree"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body fs-5 p-0 text-start p-4">
+                    The html <b>semantics</b> refers to the tags that provide meaning to an HTML page rather than just
+                    presentation. It makes HTML more comprehensible by better defining the different sections and layout
+                    of web pages
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div> 
-
-    </div>
-  </section>
-  <!-- QuestionAccordian part end -->
-  <!-- CompanyPartner part start -->
-  <section class="container my-5 d-none d-lg-block">
-    <div id="Companies">
-      <div class="row justify-content-center text-center align-items-center">
-        <div class="col-lg-7">
-          <h1>Trusted by over 800+ companies</h1>
+      </div>
+    </section>
+    <!-- QuestionAccordian part end -->
+    <!-- CompanyPartner part start -->
+    <section class="container my-5 d-none d-lg-block">
+      <div id="Companies">
+        <div class="row justify-content-center text-center align-items-center">
+          <div class="col-lg-7">
+            <h1>Trusted by over 800+ companies</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-2 g-4" style="height: 30px">
+            <img src="images/company/company-1.png" class="img-fluid h-100 w-100" alt="" />
+          </div>
+          <div class="col-lg-2 g-4" style="height: 30px">
+            <img src="images/company/company-2.png" class="img-fluid h-100 w-100" alt="" />
+          </div>
+          <div class="col-lg-2 g-4" style="height: 30px">
+            <img src="images/company/company-3.png" class="img-fluid h-100 w-100" alt="" />
+          </div>
+          <div class="col-lg-2 g-4" style="height: 30px">
+            <img src="images/company/company-4.png" class="img-fluid h-100 w-100" alt="" />
+          </div>
+          <div class="col-lg-2 g-4" style="height: 30px">
+            <img src="images/company/company-5.png" class="img-fluid h-100 w-100" alt="" />
+          </div>
+          <div class="col-lg-2 g-4" style="height: 30px">
+            <img src="images/company/company-6.png" class="img-fluid h-100 w-100" alt="" />
+          </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-lg-2 g-4" style="height: 30px;">
-          <img src="images/company/company-1.png" class="img-fluid h-100 w-100" alt="">
-        </div>
-        <div class="col-lg-2 g-4" style="height: 30px;">
-          <img src="images/company/company-2.png" class="img-fluid h-100 w-100" alt="">
-        </div>
-        <div class="col-lg-2 g-4" style="height: 30px;">
-          <img src="images/company/company-3.png" class="img-fluid h-100 w-100" alt="">
-        </div>
-        <div class="col-lg-2 g-4" style="height: 30px;">
-          <img src="images/company/company-4.png" class="img-fluid h-100 w-100" alt="">
-        </div>
-        <div class="col-lg-2 g-4" style="height: 30px;">
-          <img src="images/company/company-5.png" class="img-fluid h-100 w-100" alt="">
-        </div>
-        <div class="col-lg-2 g-4" style="height: 30px;">
-          <img src="images/company/company-6.png" class="img-fluid h-100 w-100" alt="">
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- CompanyPartner part end -->
+    </section>
+    <!-- CompanyPartner part end -->
 
-
-  <!-- footer part start -->
+    <!-- footer part start -->
 
     <footer class="container bg-black p-4 text-white" id="About">
       <div class="row justify-content-center align-items-center text-center">
         <div class="col-lg-10 col-md-10 col-sm-12 align-items-center">
           <div class="logo align-items-center">
-           <h1 class="fs-1 fw-bolder m-3 text-warning">Web Launch</h1>
-           <p>Office 41, Zawaya Buildin, Ghala Muscat, <br>
-            Sultanate of Oman</p>
-            <p class="fw-bold">Privacy Ploicy  |   Terms of use</p>
+            <h1 class="fs-1 fw-bolder m-3 text-warning">Web Launch</h1>
+            <p>
+              Office 41, Zawaya Buildin, Ghala Muscat, <br />
+              Sultanate of Oman
+            </p>
+            <p class="fw-bold">Privacy Ploicy | Terms of use</p>
 
-          <div class="socialIcon" >
-            <a  class=" bg-white text-black px-3 py-2 mx-2 rounded   btn-floating fs-5 m-2 social-button" href="#"><i class="fa-brands fa-linkedin"></i></a>
-            <a  class=" bg-white text-black px-3 py-2 mx-2 rounded   btn-floating fs-5 m-2 social-button" href="#"><i class="fa-brands fa-instagram"></i></a>
-            <a  class=" bg-white text-black px-3 py-2 mx-2 rounded   btn-floating fs-5 m-2 social-button" href="#"><i class="fa-brands fa-square-facebook"></i></a>
-            <a  class=" bg-white text-black px-3 py-2 mx-2 rounded  btn-floating fs-5 m-2 social-button" href="#"><i class="fa-brands fa-square-twitter"></i></a>
-          </div>
+            <div class="socialIcon">
+              <a class="bg-white text-black px-3 py-2 mx-2 rounded btn-floating fs-5 m-2 social-button" href="#"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a class="bg-white text-black px-3 py-2 mx-2 rounded btn-floating fs-5 m-2 social-button" href="#"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a class="bg-white text-black px-3 py-2 mx-2 rounded btn-floating fs-5 m-2 social-button" href="#"
+                ><i class="fa-brands fa-square-facebook"></i
+              ></a>
+              <a class="bg-white text-black px-3 py-2 mx-2 rounded btn-floating fs-5 m-2 social-button" href="#"
+                ><i class="fa-brands fa-square-twitter"></i
+              ></a>
+            </div>
           </div>
         </div>
       </div>
     </footer>
 
+    <!-- footer part end -->
 
-  <!-- footer part end -->
-
-
-
-<script src="bootstraap/popper.min.js"></script>
-<script src="bootstraap/bootstrap.bundle.min.js"></script>
-</body>
+    <script src="bootstraap/popper.min.js"></script>
+    <script src="bootstraap/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
