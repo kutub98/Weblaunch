@@ -55,119 +55,21 @@
                 </button>
 
                 <!-- Modal -->
-                <div
-                  class="modal fade"
-                  id="exampleModal"
-                  tabindex="-1"
-                  aria-labelledby="exampleModalLabel"
-                  aria-hidden="true"
-                >
-                  <div class="modal-dialog">
+                <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
                     <div class="modal-content">
                       <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
                       </div>
-                      <form class="row g-3 p-4">
-                        <div class="col-md-12">
-                          <label for="validationServer01" class="form-label">First name</label>
-                          <input
-                            type="text"
-                            class="form-control is-valid"
-                            id="validationServer01"
-                            value="Mark"
-                            required
-                          />
-                          <div class="valid-feedback">Looks good!</div>
-                        </div>
-                        <div class="col-md-12">
-                          <label for="validationServer02" class="form-label">Last name</label>
-                          <input
-                            type="text"
-                            class="form-control is-valid"
-                            id="validationServer02"
-                            value="Otto"
-                            required
-                          />
-                          <div class="valid-feedback">Looks good!</div>
-                        </div>
-                        <div class="col-md-12">
-                          <label for="validationServerUsername" class="form-label">Username</label>
-                          <div class="input-group has-validation">
-                            <span class="input-group-text" id="inputGroupPrepend3">@</span>
-                            <input
-                              type="text"
-                              class="form-control is-invalid"
-                              id="validationServerUsername"
-                              aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback"
-                              required
-                            />
-                            <div id="validationServerUsernameFeedback" class="invalid-feedback">
-                              Please choose a username.
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-md-12">
-                          <label for="validationServer03" class="form-label">City</label>
-                          <input
-                            type="text"
-                            class="form-control is-invalid"
-                            id="validationServer03"
-                            aria-describedby="validationServer03Feedback"
-                            required
-                          />
-                          <div id="validationServer03Feedback" class="invalid-feedback">
-                            Please provide a valid city.
-                          </div>
-                        </div>
-                        <div class="col-md-12">
-                          <label for="validationServer04" class="form-label">State</label>
-                          <select
-                            class="form-select is-invalid"
-                            id="validationServer04"
-                            aria-describedby="validationServer04Feedback"
-                            required
-                          >
-                            <option selected disabled value="">Choose...</option>
-                            <option>...</option>
-                          </select>
-                          <div id="validationServer04Feedback" class="invalid-feedback">
-                            Please select a valid state.
-                          </div>
-                        </div>
-                        <div class="col-md-6">
-                          <label for="validationServer05" class="form-label">Zip</label>
-                          <input
-                            type="text"
-                            class="form-control is-invalid"
-                            id="validationServer05"
-                            aria-describedby="validationServer05Feedback"
-                            required
-                          />
-                          <div id="validationServer05Feedback" class="invalid-feedback">
-                            Please provide a valid zip.
-                          </div>
-                        </div>
-                        <div class="col-12">
-                          <div class="form-check">
-                            <input
-                              class="form-check-input is-invalid"
-                              type="checkbox"
-                              value=""
-                              id="invalidCheck3"
-                              aria-describedby="invalidCheck3Feedback"
-                              required
-                            />
-                            <label class="form-check-label" for="invalidCheck3"> Agree to terms and conditions </label>
-                            <div id="invalidCheck3Feedback" class="invalid-feedback">
-                              You must agree before submitting.
-                            </div>
-                          </div>
-                        </div>
-                      </form>
+                      <div class="modal-body">
+                        ...
+                      </div>
                       <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="submit" class="btn btn-primary fs-5">Submit</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
                       </div>
                     </div>
                   </div>
@@ -907,8 +809,8 @@
     <footer class="container bg-black p-4 text-white" id="About">
       <div class="row justify-content-center align-items-center text-center">
         <div class="col-lg-10 col-md-10 col-sm-12 align-items-center">
-          <div class="logo align-items-center">
-            <h1 class="fs-1 fw-bolder m-3 text-warning">Web Launch</h1>
+          <div class="logo align-items-center justify-content-center">
+           <img src="images/img/logo.png" height="100px" width="100px" class="img-fluid" alt="">
             <p>
               Office 41, Zawaya Buildin, Ghala Muscat, <br />
               Sultanate of Oman
